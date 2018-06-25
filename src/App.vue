@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <Header/>
+    <my-header/>
     <v-content>
       <router-view/>
     </v-content>
-    <Footer />
+    <my-footer />
   </v-app>
 </template>
 
@@ -19,8 +19,8 @@ export default {
     }
   },
   components: {
-    Header,
-    Footer
+    'my-header': Header,
+    'my-footer': Footer
   },
   name: 'App'
 }

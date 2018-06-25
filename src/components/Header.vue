@@ -16,7 +16,7 @@
                 </nav> 
             </v-spacer>
         </v-toolbar>
-        <Slider />
+        <my-slider />
     </header>
 </template>
 
@@ -36,7 +36,7 @@ export default {
   },
   name: 'Header',
   components: {
-    Slider
+    'my-slider': Slider
   }
 }
 </script>

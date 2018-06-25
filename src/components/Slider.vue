@@ -1,5 +1,5 @@
 <template>
-    <Carousel :perPageCustom='[[768, 1], [1024, 3]]' :perPage='1'>
+    <Carousel :perPageCustom='[[768, 1], [1024, 3]]' :perPage='1' class='mt-5 pt-5'>
         <Slide v-for='(slide, index) in slides' :key='index'>
                 <router-link :to='slide.link'>
                     <img :src='slide.src' alt=''>
@@ -31,14 +31,12 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
-    .VueCarousel-inner 
-        > div 
-            padding 0
-            margin 0
-            list-style none
-            display flex
-            align-items center
-            justify-content center
-    .VueCarousel-wrapper 
-        margin-top 80px
+  .VueCarousel-inner 
+    > div 
+      padding 0
+      margin 0
+      list-style none
+      display flex
+      align-items center
+      justify-content center
 </style>
